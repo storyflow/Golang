@@ -36,6 +36,7 @@
 - 7. Notes
   * [Go import后带“_”下划线的意义](7. Notes/Go import后带“_”下划线的意义.md)
   * [Go 中的 nil](7. Notes/Go 中的 nil.md)
+  * [Golang分享](7. Notes/Golang分享.md)
   * [Go单引号和双引号区别](7. Notes/Go单引号和双引号区别.md)
   * [Go的异常处理 defer, panic, recover](7. Notes/Go的异常处理 defer, panic, recover.md)
   * [Go的进程阻塞](7. Notes/Go的进程阻塞.md)
@@ -45,6 +46,7 @@
   * [rune数据类型](7. Notes/rune数据类型.md)
   * [为什么要学Go](7. Notes/为什么要学Go.md)
   * [垃圾回收](7. Notes/垃圾回收.md)
+  * [快速入门](7. Notes/快速入门.md)
   * [方法和函数的区别](7. Notes/方法和函数的区别.md)
   * [框架的选择](7. Notes/框架的选择.md)
 * [参考资料](参考资料.md)
