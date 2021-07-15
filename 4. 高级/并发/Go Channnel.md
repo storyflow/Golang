@@ -12,3 +12,5 @@ chan<- float64  // 只可以用来发送 float64 类型的数据
 <-chan int      // 只可以用来接收 int 类型的数据
 ```
 
+## 无缓冲 channel 与有缓冲 channel
+

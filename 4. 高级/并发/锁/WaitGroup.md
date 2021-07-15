@@ -1,27 +1,22 @@
 ## 背景：
 
-```
-func main() {
-    c := make(chan bool, 100)
-    for i := 0; i < 100; i++ {
-        go func(i int) {
-            fmt.Println(i)
-            c <- true
-        }(i)
-    }
-
-    for i := 0; i < 100; i++ {
-        <-c
-    }
-}
-```
-
-
-
-## 目的：
+#### 目的：
 
 1. `WaitGroup` 用作简单的同步处理
 2. 减少内存的使用
+3. 一个 WaitGroup 对象可以等待一组协程结束
+
+
+
+## 使用方法
+
+1. main协程通过调用 `wg.Add(delta int)` 设置worker协程的个数，然后创建worker协程；
+2. worker协程执行结束以后，都要调用 `wg.Done()`；
+3. main协程调用 `wg.Wait()` 且被block，直到所有worker协程全部执行结束后返回。
+
+
+
+
 
 ## 说明：
 
