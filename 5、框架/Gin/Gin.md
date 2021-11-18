@@ -3,3 +3,9 @@
 - [gin.H{...}](https://gowalker.org/github.com/gin-gonic/gin#H)：就是一个map[string]interface{}
 - [gin.Context](https://gowalker.org/github.com/gin-gonic/gin#Context)：Context是gin中的上下文，它允许我们在中间件之间传递变量、管理流、验证JSON请求、响应JSON请求等，在gin中包含大量Context的方法，例如我们常用的DefaultQuery、Query、DefaultPostForm、PostForm等等
 
+
+
+## 框架算法
+
+gin trie树
+

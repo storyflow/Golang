@@ -33,3 +33,27 @@ var map_variable map[key_data_type]value_data_type
 map_variable := make(map[key_data_type]value_data_type)
 ```
 
+
+
+## 底层结构
+
+使用数组+链表来实现map
+
+扩容规则
+
+负载因子 `load factor` 6.5
+
+
+
+## 线程安全
+
+加读写锁 
+
+分片加锁
+
+sync.Map （dirty map）
+
+
+
+## 常见问题
+

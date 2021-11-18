@@ -65,3 +65,21 @@ func f(i int, wg *sync.WaitGroup) {
 }
 ```
 
+
+
+
+
+## 原理
+
+在 64 位环境下，state1 的第一个元素是 waiter 数，第二个元素是 WaitGroup 的计数值，第三个元素是信号量。
+
+![在这里插入图片描述](assets/367c0ea5ead347acc6cf779554d9727c.png)
+
+
+
+ waiter ：等待值
+
+ waiterGroup总数
+
+信号量：wg 是通过信号量来通知的
+
